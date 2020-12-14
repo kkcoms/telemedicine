@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/edit_text_bg"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/search_list_doctor_img_size"
+            android:layout_height="@dimen/search_list_doctor_img_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:src="@drawable/sign_in_bg_blue"></ImageView>
+
+        <ImageView
+            android:layout_width="@dimen/search_list_doctor_img_size"
+            android:layout_height="@dimen/search_list_doctor_img_size"
+            android:id="@+id/image"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/image16" />
+
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="70dp"-->
+        <!--            android:id="@+id/image1"-->
+        <!--            android:layout_alignParentLeft="true"-->
+        <!--            android:foreground="@drawable/curve_image_bg"-->
+        <!--            android:src="@drawable/image7"-->
+        <!--            android:layout_height="70dp">-->
+
+        <!--        </ImageView>-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/name"
+            android:text="Dr.Serana Gomez"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/small_text_1"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/image"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rating"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/image"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/star"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content"></ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/star"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content"></ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/star"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content"></ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/star"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content"></ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/star"
+                android:layout_height="wrap_content"></ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/degree"
+            android:layout_toRightOf="@id/image"
+            android:layout_below="@id/rating"
+            android:textSize="@dimen/small_text_2"
+            android:layout_marginBottom="5dp"
+            android:text="Cardiologist (MBBS,FCPS)"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/degree"
+            android:layout_toRightOf="@id/image"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/clock"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="12.00pm-4.00pm"
+                    android:id="@+id/time"
+                    android:textSize="@dimen/small_text_2"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/search2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="New City Clinic"
+                    android:textSize="@dimen/small_text_2"
+                    android:id="@+id/place"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:layout_alignRight="@id/name"
+            android:src="@drawable/menu2"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"></ImageView>
+
+    </RelativeLayout>
+
+</LinearLayout>

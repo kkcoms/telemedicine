@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/edit_text_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/small_text_2"
+                    android:layout_height="wrap_content"
+                    android:text="Date">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_2"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:text="01 January 2020">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/small_text_2"
+                    android:layout_height="wrap_content"
+                    android:text="Time">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/small_text_2"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"
+                    android:text="2.20ap">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/small_text_2"
+                    android:layout_height="wrap_content"
+                    android:text="Doctor">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/doctor"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/small_text_2"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:text="Dr.Nafiz Kamal">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/line"
+            android:scaleType="fitXY"
+            android:layout_height="wrap_content"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/small_text_2"
+                    android:layout_height="wrap_content"
+                    android:text="Appointment Type">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/appointmenttype"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/small_text_2"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:text="Dentiest">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/small_text_2"
+                    android:layout_height="wrap_content"
+                    android:text="Place">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/small_text_2"
+                    android:textColor="@android:color/black"
+                    android:text="New Town Clinic">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/appontButton"
+                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/small_text_2"
+                    android:background="@drawable/sign_in_bg_blue"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:layout_height="@dimen/button_height"
+                    android:text="Rescheudle">
+
+                </Button>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

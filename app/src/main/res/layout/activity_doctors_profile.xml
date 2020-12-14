@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/setting_bg_color"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:id="@+id/topbar"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.AppBarOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/appbar_img_size"
+                    android:id="@+id/back"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/back"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/appbar_img_size">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/appbar_text1_size"
+                    android:text="Dr. Serena Gome"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/topbar"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/image13"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="@dimen/doctor_profile_img"></ImageView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/shadow3"
+                    android:layout_height="@dimen/doctor_profile_img">
+
+
+                </ImageView>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:id="@+id/linVoiceCall"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/voice_call_bg"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/call"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/voice_call"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/small_text_2"
+                        android:textColor="@android:color/white"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/linVideoCall"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/video_call_bg"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/video"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/video_call"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/small_text_2"
+                        android:textColor="@android:color/white"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/message_bg"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/linMessage"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/chat1"
+                        android:layout_height="wrap_content"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/message"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/small_text_2">
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/medicine_and_heart"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/small_text_1"
+                android:textStyle="bold"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/good_health_clinic"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/small_text_2"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/star"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/star"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/star"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/star"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/star"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/about_serena"
+                android:textStyle="bold"
+                android:textSize="@dimen/small_text_1"
+                android:layout_marginTop="15dp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/small_text_2"
+                android:text="@string/lorem"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/patients"
+                        android:textSize="@dimen/small_text_2"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/small_text_1"
+                        android:text="1.08k"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/experience"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/small_text_2"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="8 Years"
+                        android:textSize="@dimen/small_text_1"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/small_text_2"
+                        android:text="@string/review"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="2.05k"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/small_text_1"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:id="@+id/bookAnAppointmentBtn"
+                android:background="@drawable/sign_in_bg_blue"
+                android:textAllCaps="false"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="@dimen/small_text_1"
+                android:text="@string/book_an_appointment"
+                android:textColor="@android:color/white"></Button>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

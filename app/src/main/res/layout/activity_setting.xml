@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_bg_color">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topbar"
+        app:elevation="0dp"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.AppBarOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/appbar_img_size"
+                    android:id="@+id/back"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/back"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/appbar_img_size">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/appbar_text1_size"
+                    android:text="Settings"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/notification_img_size"
+                    android:src="@drawable/notificatio"
+                    android:scaleType="fitXY"
+                    android:layout_height="@dimen/notification_img_size"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_text_1"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/notification"></TextView>
+
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:checked="true"
+                    android:gravity="right|center_vertical"
+                    android:thumb="@drawable/bg_thumb"
+                    android:track="@drawable/bg_switch_states"
+                    android:layout_height="@dimen/setting_row_img"></Switch>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="2dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/notification_img_size"
+                    android:src="@drawable/notificatio"
+                    android:scaleType="fitXY"
+                    android:layout_height="@dimen/notification_img_size"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/small_text_1"
+                    android:text="@string/message_option"></TextView>
+
+                <Switch
+                    android:layout_width="match_parent"
+
+                    android:layout_gravity="right|center_vertical"
+                    android:thumb="@drawable/bg_thumb"
+                    android:track="@drawable/bg_switch_states"
+                    android:gravity="right"
+                    android:layout_height="@dimen/setting_row_img"></Switch>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="2dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/notification_img_size"
+                    android:src="@drawable/notificatio"
+                    android:scaleType="fitXY"
+                    android:layout_height="@dimen/notification_img_size"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_1"
+                    android:text="@string/call_option"></TextView>
+
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:checked="true"
+                    android:gravity="right"
+                    android:thumb="@drawable/bg_thumb"
+                    android:track="@drawable/bg_switch_states"
+                    android:layout_height="@dimen/setting_row_img"></Switch>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/notification_img_size"
+                    android:src="@drawable/notificatio"
+                    android:layout_height="@dimen/notification_img_size"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/small_text_1"
+                    android:text="@string/video_call_option"></TextView>
+
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="right"
+                    android:thumb="@drawable/bg_thumb"
+                    android:track="@drawable/bg_switch_states"
+                    android:layout_height="@dimen/setting_row_img"></Switch>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

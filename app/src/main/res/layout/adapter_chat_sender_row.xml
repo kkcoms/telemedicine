@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutmsg"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/image"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/senderMessage"
+            android:text="Hello Doctor! How are you doing?"
+            android:textSize="@dimen/small_text_1"
+            android:background="@drawable/chat_sender_bg"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"></TextView>
+
+
+        <TextView
+            android:id="@+id/senderTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:textSize="@dimen/small_text_1"
+            android:layout_below="@id/senderMessage"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/senderMessage"
+            android:text="12.10"
+            android:textColor="@android:color/darker_gray">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <com.infinityandroid.roundedimageview.RoundedImageView
+        android:layout_width="@dimen/chat_profile_img"
+        android:layout_height="@dimen/chat_profile_img"
+        android:id="@+id/image"
+        app:corner_radius="10"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/image15" />
+
+
+</RelativeLayout>

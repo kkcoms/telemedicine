@@ -1,0 +1,39 @@
+{
+  "array": [
+    {
+      message: "Hello Doctor! How are you doing?",
+      time: "12.50",
+      type: "sent"
+    },
+    {
+      message: "We denounce with righteous indignation and dislike men with women. that they cannot foresee the pain",
+      time: "12.20",
+      type: "receive"
+    },
+    {
+      message: "When nothing prevents our being able to do what we like best,  every please is tobe welcomed and every pain",
+      time: "12.50",
+      type: "sent"
+    },
+    {
+      message: "If you are going to use a passage of lorem ipsum, you need to be  sure there isn't anything extraordnary",
+      time: "12.50",
+      type: "receive"
+    },
+    {
+      message: "There are many variations of passenger of lorem ipsum available , but the to majority have suffered",
+      time: "12.50",
+      type: "sent"
+    },
+    {
+      message: "I will call you tomorrow",
+      time: "12.50",
+      type: "receive"
+    },
+    {
+      message: "Thanks you so much. Have a nice day",
+      time: "12.50",
+      type: "sent"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "array": [
+    {
+      name: "Dr. Serana Gomez",
+      specialist: "Cardiologist (MBBS,FCPS)",
+      time: "12.00pm - 4.00pm",
+      place: "New city Clinic"
+    },
+    {
+      name: "Dr. Serana Gomez",
+      specialist: "Cardiologist (MBBS,FCPS)",
+      time: "12.00pm - 4.00pm",
+      place: "New city Clinic"
+    },
+    {
+      name: "Dr. Serana Gomez",
+      specialist: "Cardiologist (MBBS,FCPS)",
+      time: "12.00pm - 4.00pm",
+      place: "New city Clinic"
+    },
+    {
+      name: "Dr. Serana Gomez",
+      specialist: "Cardiologist (MBBS,FCPS)",
+      time: "12.00pm - 4.00pm",
+      place: "New city Clinic"
+    }
+  ]
+}

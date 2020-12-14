@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/alldoctor_row_weight"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/edit_text_bg"
+    android:layout_height="@dimen/alldoctor_row_height">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/name"
+            android:text="Dr Serena Gome"
+            android:textStyle="bold"
+            android:textSize="@dimen/small_text_1"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/specialist"
+            android:text="Medicine Specialist"
+            android:textSize="@dimen/small_text_2"
+            android:layout_height="wrap_content"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/star"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"></ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/star"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"></ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/star"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"></ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/star"
+                android:paddingRight="5dp"
+                android:layout_height="wrap_content"></ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/star"
+                android:layout_height="wrap_content"></ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Experience"
+            android:textSize="@dimen/small_text_2"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/experience"
+            android:text="8 Years"
+            android:textStyle="bold"
+            android:textSize="@dimen/small_text_1"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Patients"
+            android:textSize="@dimen/small_text_2"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="1.08k"
+            android:id="@+id/patient"
+            android:textStyle="bold"
+            android:textSize="@dimen/small_text_1"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/doctorImage"
+        android:src="@drawable/image4"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent"></ImageView>
+
+    <ImageView
+        android:layout_width="@dimen/shadow_width"
+        android:src="@drawable/shadow_all_doctor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitEnd"
+        android:layout_height="match_parent">
+
+    </ImageView>
+
+
+</RelativeLayout>

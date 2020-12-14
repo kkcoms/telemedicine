@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "608711284557",
+    "firebase_url": "https://medicaltelemedicine-a4da8-default-rtdb.firebaseio.com",
+    "project_id": "medicaltelemedicine-a4da8",
+    "storage_bucket": "medicaltelemedicine-a4da8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608711284557:android:79bc0b84d65b13ee0c0904",
+        "android_client_info": {
+          "package_name": "com.medical.telemedicine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608711284557-m72q4jko8890ol5lafmaf011ar0ls089.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.medical.telemedicine",
+            "certificate_hash": "ecb85c1af6cc881834f837188dcc8193f977b4c2"
+          }
+        },
+        {
+          "client_id": "608711284557-rg6bso1e7v2ert29ta4lmetlm320oufu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPBHZHTOkNIbwuQHz4jbIG4x1sAcjm_g4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608711284557-rg6bso1e7v2ert29ta4lmetlm320oufu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

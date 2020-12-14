@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:layout_alignParentTop="true"
+        app:tabIndicatorColor="@color/blue"
+        android:background="@color/colorPrimary"
+        app:tabGravity="fill"
+        app:tabMaxWidth="0dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabTextAppearance="@style/MineCustomTabText"
+        app:tabTextColor="@android:color/darker_gray">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/pediatrician"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pediatrician" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/neurosurgeon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neurosurgeon" />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/cardiologist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cardiologist" />
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/phychologist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phychologist" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tablayout" />
+
+
+</LinearLayout>
